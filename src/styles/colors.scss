@@ -1,13 +1,17 @@
 :root {
-  --color-primary: #006cbb;
+  --ui-color-primary: #007bff;
+  --ui-color-secondary: #6c757d;
+  --ui-color-success: #28a745;
+  --ui-color-danger: #dc3545;
+  --ui-color-warning: #ffc107;
+  --ui-color-info: #17a2b8;
+  --ui-color-light: #f8f9fa;
+  --ui-color-dark: #343a40;
 
-  --color-white: #ffffff;
-  --color-gray-light: #eeeeee;
-  --color-gray: #cccccc;
-  --color-gray-dark: #777777;
-  --color-black: #000000;
-
-  --color-success: #01bd78;
-
-  --color-error: #d40019;
+  --ui-bg: #ffffff;
+  --ui-text: #212529;
+  --ui-border: #dee2e6;
+  --ui-input-bg: #ffffff;
+  --ui-focus-ring: rgba(0, 123, 255, 0.25);
+  --ui-disabled-bg: #e9ecef;
 }

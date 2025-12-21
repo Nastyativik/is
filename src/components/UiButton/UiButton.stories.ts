@@ -1,25 +1,23 @@
-import { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3';
+import UIButton from './UIButton.vue';
 
-import { UiButton } from '..';
-import { html } from '../../helpers';
-
-const meta: Meta<typeof UiButton> = {
-  component: UiButton,
-  args: {},
-  argTypes: {
-    layout: {
-      options: ['primary', 'secondary'],
-    },
-  },
+const meta: Meta<typeof UIButton> = {
+  title: 'Components/UIButton',
+  component: UIButton,
+  tags: ['autodocs'],
 };
 
 export default meta;
 
-export const Primary: StoryObj<typeof UiButton> = {
+export const Primary: StoryObj<typeof UIButton> = {
+  args: {
+    layout: 'primary',
+    type: 'button',
+    isDisabled: false,
+  },
   render: (args) => ({
-    components: { UiButton },
-    setup: () => ({ args }),
-
-    template: html` <UiButton v-bind="args">Текст</UiButton>`,
+    components: { UIButton },
+    template: `<UIButton v-bind="args">Кнопка</UIButton>`, 
   }),
 };
+

@@ -1,38 +1,77 @@
 import { ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 
-# Colors
+# Цветовая палитра
+
+Все компоненты библиотеки используют CSS-переменные из файла `src/styles/colors.scss`.
 
 <ColorPalette>
 
 <ColorItem
   title='Primary'
   colors={{
-    '--color-primary': '#006cbb',
+    '--ui-color-primary': '#007bff',
   }}
 />
 
 <ColorItem
-  title='Monochrome'
+  title='Secondary'
   colors={{
-    '--color-white': '#ffffff',
-    '--color-gray-light': '#eeeeee',
-    '--color-gray': '#cccccc',
-    '--color-gray-dark': '#777777',
-    '--color-black': '#000000',
+    '--ui-color-secondary': '#6c757d',
   }}
 />
 
 <ColorItem
   title='Success'
   colors={{
-    '--color-success': '#01bd78',
+    '--ui-color-success': '#28a745',
   }}
 />
 
 <ColorItem
-    title='Error'
-    colors={{
-      '--color-error': '#d40019',
-    }}
+  title='Danger'
+  colors={{
+    '--ui-color-danger': '#dc3545',
+  }}
 />
+
+<ColorItem
+  title='Warning'
+  colors={{
+    '--ui-color-warning': '#ffc107',
+  }}
+/>
+
+<ColorItem
+  title='Info'
+  colors={{
+    '--ui-color-info': '#17a2b8',
+  }}
+/>
+
+<ColorItem
+  title='Monochrome'
+  colors={{
+    '--ui-color-light': '#f8f9fa',
+    '--ui-color-dark': '#343a40',
+    '--ui-bg': '#ffffff',
+    '--ui-text': '#212529',
+  }}
+/>
+
+<ColorItem
+  title='Border & Background'
+  colors={{
+    '--ui-border': '#dee2e6',
+    '--ui-input-bg': '#ffffff',
+    '--ui-disabled-bg': '#e9ecef',
+  }}
+/>
+
+<ColorItem
+  title='Focus Ring'
+  colors={{
+    '--ui-focus-ring': 'rgba(0, 123, 255, 0.25)',
+  }}
+/>
+
 </ColorPalette>
