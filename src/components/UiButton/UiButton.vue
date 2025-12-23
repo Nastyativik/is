@@ -16,7 +16,7 @@ import type { IProps, IEmit } from 'src/helpers';
 defineProps<IProps>();
 defineEmits<IEmit>();
 
-const variant = defineModel<string>('variant', { default: 'primary' });
+const layout = defineModel<string>('variant', { default: 'primary' });
 const isDisabled = defineModel<boolean>('isDisabled', { default: false });
 const type = defineModel<'button' | 'submit'>('type', { default: 'button' });
 </script>
