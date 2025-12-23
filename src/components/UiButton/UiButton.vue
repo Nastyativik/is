@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="['ui-button', `ui-button--${variant}`]"
+    :class="['ui-button', `ui-button--${layout}`]"
     :disabled="isDisabled"
     :type="type"
     :data-variant="variant"
