@@ -16,7 +16,7 @@ defineProps<IProps>();
 defineEmits<IEmit>();
 
 const modelValue = defineModel<string>();
-const variant = defineModel<string>('variant', { default: 'primary' });
+const layout = defineModel<string>('variant', { default: 'primary' });
 const isDisabled = defineModel<boolean>('isDisabled', { default: false });
 </script>
 
